@@ -4,7 +4,6 @@ import ShibaInuNodImg from "./ShibaInuNod.gif";
 import "./ShibaInuNod.css";
 
 const ShibaInuNod = ({ correct, setCorrect }) => {
-  correct = true;
   if (correct) {
     setTimeout(() => {
       setCorrect(false);
