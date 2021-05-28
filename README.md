@@ -1,5 +1,5 @@
 # DogeMathTutor
-Small Concept App for Tutoring Elementary School Students from Grades 1 to 8
+Small Concept App for Tutoring Elementary School Students from Grades 1 to 8 in Mathematics.
 
 ## Collecting the Questions
 The questions were scraped from [prodigygame](https://www.prodigygame.com/main-en/blog/math-word-problems/) using beautiful soup. Due to the inconsistent nature of structure of the HTML tree between questions, the parsing of the data was more involved and required more formatting than would be expected from initial glance of the web page. A .txt file with the initial scraping code (python) is also provided to verify these claims. The formatted data was saved to a .csv file using the pandas library.
