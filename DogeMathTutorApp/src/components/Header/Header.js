@@ -31,7 +31,7 @@ const Header = ({ grade, gradeSet }) => {
       newGrade = newGrade.props.value;
     }
     dispatch(changeGrade(newGrade + 1));
-    setMobileGrade(event.target.value + 1);
+    setMobileGrade(event.target.value);
   };
 
   // Get Width of viewport
@@ -42,10 +42,10 @@ const Header = ({ grade, gradeSet }) => {
     return (
       <div style={{ display: "flex", justifyContent: "center" }}>
         <FormControl className={classes.formControl}>
-          <InputLabel id="demo-simple-select-label">Grade</InputLabel>
+          <InputLabel>Grade</InputLabel>
           <Select value={mobileGrade} onChange={handleChange}>
             {gradeSet.map((grade) => {
-              return <MenuItem value={grade}>Grade&nbsp;{grade}</MenuItem>;
+              return <MenuItem value={grade - 1}>Grade&nbsp;{grade}</MenuItem>;
             })}
           </Select>
         </FormControl>
