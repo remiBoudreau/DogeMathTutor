@@ -1,4 +1,4 @@
-#import requests
+import requests
 import bs4
 import re
 import json
@@ -10,12 +10,12 @@ grades = []
 ids = []
 
 # Direct From Site
-#response = requests.get('https://www.prodigygame.com/main-en/blog/math-word-questions/')
-#soup = bs4.BeautifulSoup(response.text, "lxml")
+response = requests.get('https://www.prodigygame.com/main-en/blog/math-word-questions/')
+soup = bs4.BeautifulSoup(response.text, "lxml")
 
 # Local Copy of Site
-with open("index.html") as fp:
-    soup = bs4.BeautifulSoup(fp, "lxml")
+#with open("index.html") as fp:
+#    soup = bs4.BeautifulSoup(fp, "lxml")
 
 # Remove all <span> prior to first one pertaining to problems
 soupString = re.findall('<p style="text-align:center"><img alt="Math Word Problems - Three students stand at a white completing math word problems focused on addition, under a teacher\'s watchful eye. " class="aligncenter size-full wp-image-945" height="400" src="./120 Math Word Problems To Challenge Students Grades 1 to 8 _ Prodigy Education_files/2017-01-09-Math-Whiteboard-condensed-5.jpg" width="600"/></p>[\s\S]*', str(soup))[0]
@@ -66,7 +66,7 @@ for b in soup.find_all('b'):
 for topic in topics:
     ids.append(str(uuid.uuid4()))
 
-# Create json for json2graphql
+# Create csv
 import pandas as pd 
 pd.DataFrame({'topic':topics,'question':questions,'grades':grades, 'id':ids}).to_csv('prodigyData.csv', index=False)
 
