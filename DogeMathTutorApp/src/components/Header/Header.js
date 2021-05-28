@@ -40,7 +40,7 @@ const Header = ({ grade, gradeSet }) => {
   // Change Tabs to Dropdown if width small
   if (width < 706) {
     return (
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className="headerMobile-container">
         <FormControl className={classes.formControl}>
           <InputLabel>Grade</InputLabel>
           <Select value={mobileGrade} onChange={handleChange}>
