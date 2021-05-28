@@ -1,0 +1,78 @@
+.problems-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 40vw;
+  overflow: hidden;
+}
+.scrollIndicator-wrapper {
+  position: absolute;
+  right: 0;
+  transform: translate(100%, -80px);
+  bottom: 0;
+}
+.instructions-wrapper {
+  position: absolute;
+  height: 50vh;
+  width: 40vw;
+  z-index: 1;
+}
+.triangleOutside-wrapper {
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+}
+.triangleInside-wrapper {
+  position: absolute;
+  right: 0;
+}
+.triangle {
+  max-height: 250px;
+  width: 40vw;
+}
+
+/* md */
+@media only screen and (max-width: 960px) {
+  .problems-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .scrollIndicator-wrapper {
+    position: absolute;
+    right: unset;
+    left: 50%;
+    bottom: 160px;
+    transform: translateX(-50%);
+  }
+  .instructions-wrapper {
+    position: absolute;
+    height: 50vh;
+    width: 75vw;
+    z-index: 1;
+    top: 40px;
+  }
+  .triangleOutside-wrapper {
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    transform: translateX(-25%) rotate(90deg);
+  }
+}
+@media only screen and (max-width: 960px) {
+  .scrollIndicator-wrapper {
+    position: absolute;
+    right: unset;
+    left: 50%;
+    bottom: 160px;
+    transform: translateX(-50%);
+  }
+  .instructions-wrapper {
+    position: absolute;
+    height: 50vh;
+    width: 75vw;
+    z-index: 1;
+    top: 40px;
+    font-size: 12px;
+  }
+}

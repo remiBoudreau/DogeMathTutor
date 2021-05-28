@@ -1,0 +1,43 @@
+.content-container {
+  background-color: #fde9d4;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.left-side {
+  position: absolute;
+  left: 0;
+  width: 50vw;
+}
+.right-side {
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+}
+.right-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.left-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 960px) {
+  .left-side {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+  }
+  .right-side {
+    position: absolute;
+    right: 0;
+    width: 0vw;
+    height: 100vh;
+  }
+}

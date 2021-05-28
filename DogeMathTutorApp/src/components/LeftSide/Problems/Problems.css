@@ -1,0 +1,55 @@
+.disable-scrollbars::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Chrome/Safari/Webkit */
+}
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.problemsOuter-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease-in-out;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.problemsInner-container {
+  height: 60vh;
+  width: 100%;
+}
+.problem-container {
+  padding: 20px;
+  height: 90%;
+  position: relative;
+}
+.question-container {
+  margin-bottom: 20px;
+}
+.buttons-container {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+/* md */
+@media only screen and (max-width: 960px) {
+  .problemsOuter-container {
+    align-items: unset;
+  }
+  .problemsInner-container {
+    width: 90%;
+    position: relative;
+    top: 10vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .problem-container {
+    padding: 5vw;
+    height: 85%;
+    position: relative;
+  }
+}

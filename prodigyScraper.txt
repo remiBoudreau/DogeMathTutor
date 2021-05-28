@@ -1,0 +1,37 @@
+# Direct From Site
+#response = requests.get('https://www.prodigygame.com/main-en/blog/math-word-questions/')
+#soup = bs4.BeautifulSoup(response.text, "lxml")
+
+# Local Copy of Site
+with open("index.html") as fp:
+    soup = bs4.BeautifulSoup(fp, "lxml")
+'''
+# Find all topics and corresponding questions
+#for b in soup.find_all('b'):
+#    for childB in b.find_all('b'):
+#        topics.append(childB)
+#    for childSpan in b.find_all('span'):
+#        questions.append(childSpan)
+
+# # Remove last 7 lines
+# topics = topics[:len(topics)-7]
+
+# for topicIn in range(len(topics)):
+#     # Remove all chars before first letter
+#     for i,x in enumerate(topics[topicIn].string):
+#         if x.isalpha():
+#             pos = i
+#             topics[topicIn] = topics[topicIn].string[i:]
+#             break
+
+# Questions and Topics different lengths and impossible to fix without manual intervention.
+# Explore other avenue for fixing it
+# i = 1
+# for question in questions: 
+#     print(str(i) + ".      " + question.string)
+#     i += 1
+# for question in questions:
+#     print(question)
+
+# remove last 7.
+'''

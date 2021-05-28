@@ -1,0 +1,27 @@
+.arrow {
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #1c768f;
+  border-right: 3px solid #1c768f;
+  transform: rotate(135deg);
+  animation: animate 2s infinite;
+}
+
+.arrowTwo {
+  animation-delay: -0.2s;
+}
+.arrowOne {
+  animation-delay: -0.2s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
