@@ -31,7 +31,7 @@ const Header = ({ grade, gradeSet }) => {
       newGrade = newGrade.props.value;
     }
     dispatch(changeGrade(newGrade + 1));
-    setMobileGrade(event.target.value);
+    setMobileGrade(event.target.value + 1);
   };
 
   // Get Width of viewport
