@@ -1,6 +1,6 @@
+# DogeMathTutor
 [Demo](https://doge-math-tutor.vercel.app/)
 
-# DogeMathTutor
 Small Concept App for Tutoring Elementary School Students from Grades 1 to 8 in Mathematics.
 
 ## Collecting the Questions
