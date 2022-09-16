@@ -1,7 +1,7 @@
 # DogeMathTutor
 [Demo](https://doge-math-tutor.vercel.app/)
 
-NOTE: Behaviour of the app has changed due to changes in BaaS platform used for db
+NOTE: Behaviour of the app has changed due to changes in BaaS platform used for db. No answer is correct.
 
 Small Concept App for Tutoring Elementary School Students from Grades 1 to 8 in Mathematics. 
 
